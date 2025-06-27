@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>5 Orbiters Circular Animation</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      overflow: hidden;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .orbit-system {
+      position: relative;
+      width: 400px;
+      height: 400px;
+    }
+
+    .main-logo {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #4285f4;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      z-index: 10;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      border: 3px solid white;
+    }
+
+    .orbit-path {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 250px;
+      height: 250px;
+      border: 2px dashed rgba(66, 133, 244, 0.4);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .orbiter {
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      transform-origin: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      border: 2px solid white;
+      transition: transform 0.3s ease;
+    }
+
+    .orbiter:hover {
+      transform: scale(1.2);
+      z-index: 20;
+    }
+
+    .orbiter:nth-child(2) { background-color: #EA4335; }
+    .orbiter:nth-child(3) { background-color: #FBBC05; }
+    .orbiter:nth-child(4) { background-color: #34A853; }
+    .orbiter:nth-child(5) { background-color: #9B59B6; }
+    .orbiter:nth-child(6) { background-color: #2ECC71; }
+  </style>
+</head>
+<body>
+  <div class="orbit-system">
+    <div class="main-logo">LOGO</div>
+    <div class="orbit-path"></div>
+
+    <!-- 5 orbiters -->
+    <div class="orbiter" id="orbiter1">1</div>
+    <div class="orbiter" id="orbiter2">2</div>
+    <div class="orbiter" id="orbiter3">3</div>
+    <div class="orbiter" id="orbiter4">4</div>
+    <div class="orbiter" id="orbiter5">5</div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const orbiters = [
+        document.getElementById('orbiter1'),
+        document.getElementById('orbiter2'),
+        document.getElementById('orbiter3'),
+        document.getElementById('orbiter4'),
+        document.getElementById('orbiter5'),
+      ];
+
+      const radius = 125; // Orbit radius
+      const centerX = 200;
+      const centerY = 200;
+      const speed = 0.01;
+
+      const angles = orbiters.map((_, i) => (i * (2 * Math.PI)) / orbiters.length);
+
+      function animate() {
+        orbiters.forEach((orbiter, i) => {
+          angles[i] += speed;
+          const x = centerX + radius * Math.cos(angles[i]) - orbiter.offsetWidth / 2;
+          const y = centerY + radius * Math.sin(angles[i]) - orbiter.offsetHeight / 2;
+
+          orbiter.style.left = `${x}px`;
+          orbiter.style.top = `${y}px`;
+        });
+
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+    });
+  </script>
+</body>
+</html>

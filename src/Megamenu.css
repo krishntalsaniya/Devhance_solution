@@ -1,0 +1,110 @@
+/* Main container */
+.mega-menu {
+  display: flex;
+  background-color: #10121c;
+  color: #fff;
+  padding: 40px;
+  gap: 60px;
+  border-radius: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.categories {
+  flex: 1;
+}
+
+.categories h4,
+.latest-news h4 {
+  color: #a6a8b6;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categories li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.categories li.active,
+.categories li:hover {
+  background-color: #1d1f2b;
+}
+
+.categories li .icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.icon.golf { background-color: #2ecc71; }
+.icon.tennis { background-color: #3498db; }
+.icon.basketball { background-color: #e67e22; }
+.icon.baseball { background-color: #b4d455; }
+.icon.hockey { background-color: #c0392b; }
+
+.categories li div strong {
+  font-size: 16px;
+  display: block;
+}
+
+.categories li div p {
+  margin: 0;
+  font-size: 13px;
+  color: #a6a8b6;
+}
+
+.latest-news {
+  flex: 2;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background-color: #1a1d2a;
+  border-radius: 16px;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h5 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.card p {
+  font-size: 13px;
+  color: #a6a8b6;
+  line-height: 1.4;
+} 
