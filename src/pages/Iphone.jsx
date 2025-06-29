@@ -1,40 +1,70 @@
-import React from 'react'
-import ServHero from '../components/ServHero'
-import Header from '../components/Header'
-import ServOur from '../components/ServOur'
-import Industries from '../components/Industries'
-import AndroidServ from '../components/AndroidServ'
-import ForDev from '../components/ForDev'
-import TabSection from '../components/Tabs'
-import Process from '../components/Process'
-import Footer from '../components/Footer'
+import React from "react";
+import ServHero from "../components/ServHero";
+import Header from "../components/Header";
+import ServOur from "../components/ServOur";
+import Industries from "../components/Industries";
+import AndroidServ from "../components/AndroidServ";
+import ForDev from "../components/ForDev";
+import TabSection from "../components/Tabs";
+import Process from "../components/Process";
+import Footer from "../components/Footer";
 
 function Iphone() {
   return (
     <>
-    <Header/>
-    <ServHero title="iPhone app development company" subtitle="Your Next-Gen iPhone App designed for perfection" para="Our experienced iPhone mobile app developer team in Dubai operates with diligence, agility, punctuality, and precision to design feature-rich, user-friendly, and robust iOS and iPhone apps." bgurl="/images/servbg4.png" />
+      <Header />
+      <ServHero
+        title="iPhone app development company"
+        subtitle="Next-Gen iOS Apps Built for Performance and Precision"
+        para="Our skilled iPhone app development team in Vadodara delivers powerful, user-centric iOS solutions with speed, accuracy, and innovation. From sleek design to flawless functionality, we build feature-rich iPhone apps tailored to meet your business goals and exceed user expectations."
+        bgurl="/images/servbg4.png"
+      />
       <div className="servour">
         <div className="container">
-          <ServOur leftTitle="Our iPhone App Development Services" rightpara="Having more than 10+ years of experience in building iOS and iPhone apps, we take pride in announcing ourselves as one of the best iPhone Mobile App Development Company in Atlanta. Our expertise comprises a rich collection of enterprise apps delivering high quality experience ever since the inception of the app store." />
-            <div className="serv-bottom">
-                <AndroidServ icon="/images/offer1.png" title="Custom iOS App Development" para="We offer expert custom iOS app development solutions that are scalable and future-forward. Our development services will fit your specific requirements precisely be it for blooming startups or dynamic enterprises."/>
+          <ServOur
+            leftTitle="Our iPhone App Development Services"
+            rightpara="With over a decade of experience in iOS and iPhone app development, Devhence Solutions stands as a trusted iPhone app development company in Vadodara . Our team specializes in crafting enterprise-grade applications that deliver seamless performance, intuitive user experiences, and lasting business value — right from the early days of the App Store to today’s evolving mobile landscape."
+          />
+          <div className="serv-bottom">
+            <AndroidServ
+              icon="/images/offer1.png"
+              title="Custom iOS App Development"
+              para="We deliver tailored iOS app development solutions designed for scalability, performance, and long-term success. Whether you're a growing startup or an established enterprise, our custom-built apps are crafted to meet your unique business needs with precision and innovation."
+            />
 
-                <AndroidServ icon="/images/design.png" title="iOS UI/UX Design" para="Our team of iOS app developers in Saudi Arabia focuses greatly on designing visually appealing and memorable designs. The apps that we develop for iOS are aligned to complement the Apple Ecosystem, giving your users an experience they will not forget."/>
-                
-                <AndroidServ icon="/images/Web.png" title="iOS App Development Consultation" para="Unlike other apps, iOS apps have to be crafted in a specific pattern to suit business. Devhence Solution iOS developers assist clients to determine how to launch their business app over this versatile platform."/>
+            <AndroidServ
+              icon="/images/design.png"
+              title="iOS UI/UX Design"
+              para="At Devhence Solutions, our iOS design team in Vadodara specializes in creating sleek, intuitive, and visually captivating interfaces. Every app we design is crafted to seamlessly align with the Apple ecosystem, delivering a premium user experience that’s both functional and unforgettable."
+            />
 
-                <AndroidServ icon="/images/multi.png" title="Multi-Platform Deployment" para="Being a custom iPhone app development company we are experts in developing apps that can be launched across a multitude of apple devices. We ensure that your iOS application is seen and used everywhere."/>
-            </div>
+            <AndroidServ
+              icon="/images/Web.png"
+              title="iOS App Development Consultation"
+              para="iOS apps require strategic planning and platform-specific precision. At Devhence Solutions, our expert consultants guide you through every step — from idea validation to launch strategy — ensuring your iOS app is built for success and aligned with your business objectives."
+            />
+
+            <AndroidServ
+              icon="/images/multi.png"
+              title="Multi-Platform Deployment"
+              para="As a custom iPhone app development company, we specialize in building apps optimized for seamless performance across the entire Apple ecosystem — including iPhone, iPad, Apple Watch, and Apple TV. We ensure your iOS application delivers a consistent and engaging experience, no matter where it’s accessed."
+            />
+          </div>
         </div>
-    </div>
-    <ForDev devbanner="/images/devbanner4.png" devtitle="One-Stop Solution for iPhone App Development" devstrong="" devpara1="Devhence Solution is a leading iPhone App Development Company in Dallas, Texas that has sailed a long way with unmatched creativity and remarkable innovations. iOS devices designed by our iPhone Mobile App Developer in Chicago have the flexibility to access various libraries and tools and are enriched with mobile-friendly interfaces." devpara2="The frameworks that we incorporate in our iPhone app development process are powered by the latest app development technology and a mindful approach. Reach out to us to discuss your business requirements in detail." />
-    <Process/>
-    <Industries />
-    <TabSection/>
-    <Footer/>
+      </div>
+      <ForDev
+        devbanner="/images/devbanner4.png"
+        devtitle="Your One-Stop Partner for iPhone App Development"
+        devstrong=""
+        devpara1="Devhence Solutions is a trusted iPhone app development company based in Vadodara — known for delivering innovative, user-friendly, and future-ready iOS solutions. Our skilled developers in Vadodara or Ahmedabad create flexible and feature-rich iOS applications that leverage powerful libraries, tools, and mobile-optimized interfaces."
+        devpara2="Using the latest frameworks and technologies, we craft high-performance apps with a strategic, results-driven approach. Let’s connect to bring your iOS app idea to life with precision and purpose."
+      />
+      <Process />
+      <Industries />
+      <TabSection />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default Iphone
+export default Iphone;

@@ -14,22 +14,22 @@ const industries = [
 const Industries = () => {
   return (
     <section className="industries-section">
-    <div className="container">
-
-      <h2 className="title">Industries We Work With</h2>
-      <div className="subtitle">Latest and Greatest Services</div>
-      <div className="industries-grid">
-        {industries.map((item, index) => (
-          <div className="industry-item" key={index}>
-            <div>
-              <img src={item.icon} alt={item.label} />
-              <p>{item.label}</p>
+      <div className="container">
+        <h2 className="title">Our Industry Expertise</h2>
+        <div className="subtitle">
+          Smart Solutions for Every Business Landscape
+        </div>
+        <div className="industries-grid">
+          {industries.map((item, index) => (
+            <div className="industry-item" key={index}>
+              <div>
+                <img src={item.icon} alt={item.label} />
+                <p>{item.label}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
-
     </section>
   );
 };

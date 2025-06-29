@@ -1,20 +1,25 @@
-import React from 'react'
-import ServHero from '../components/ServHero'
-import Header from '../components/Header'
-import ServOur from '../components/ServOur'
-import Industries from '../components/Industries'
-import AndroidServ from '../components/AndroidServ'
-import ForDev from '../components/ForDev'
-import TabSection from '../components/Tabs'
-import Process from '../components/Process'
-import Offer from '../components/Offer'
-import Footer from '../components/Footer'
+import React from "react";
+import ServHero from "../components/ServHero";
+import Header from "../components/Header";
+import ServOur from "../components/ServOur";
+import Industries from "../components/Industries";
+import AndroidServ from "../components/AndroidServ";
+import ForDev from "../components/ForDev";
+import TabSection from "../components/Tabs";
+import Process from "../components/Process";
+import Offer from "../components/Offer";
+import Footer from "../components/Footer";
 
 function About() {
   return (
     <>
-    <Header/>
-    <ServHero title="Your Ideas, Our Competency: Creating Visions With Expertise and Innovation" subtitle="About Devhence Solution Pvt. Ltd." para="Delivering Excellence With Our Skills" bgurl="/images/aboutbg.jpg" />
+      <Header />
+      <ServHero
+        title="Your Vision, Our Expertise  Turning Ideas Into Impact"
+        subtitle="About Devhence Solution."
+        para="Delivering Value Through Design, Code, and Creativity"
+        bgurl="/images/aboutbg.jpg"
+      />
       {/* <div className="servour">
         <div className="container">
           <ServOur leftTitle="Our Wearable App Development Services" rightpara="Rocket launches your business with the dynamic tech of wearable App Development in Atlanta. We became the Best App Development Company in Chicago by fulfilling our client expectations & continue to do so with our robust wearable app development services." />
@@ -29,22 +34,36 @@ function About() {
             </div>
         </div>
     </div> */}
-    <ForDev devbanner="/images/aboutbanner.png" devtitle="About Devhence Solution" devstrong="" devpara1="Devhence Solution, a recognized mobile app development company in Chicago, transforms your ideas into a development cycle with our team of experienced experts who have tremendous capabilities to tackle tech. We work hand in hand with our clients to ensure that the project we deliver fulfils every expectation and creates a difference for its users." devpara2="Our team is known for streamlining workflow, integrating captivating functions all towards one specific goal- the growth of your business. To increase the productivity of your enterprise, Devhence Solution stands as a stem with its team of UI/UX designers, mobile app developers, and quality analysts. Committed to deliver strategically designed and creatively develop world class mobile applications." />
-    <div className="aibanner">
-      <div className="aidata">
-        <h2>A team of experts dedicated to developing robust apps for the world</h2>
-        <p>
-          We are a top-notch app development company in Atlanta that aids digital requirements for startups, businesses, and well-established enterprises to reinforce the potential of technology and achieve invincible growth. At Devhence Solution we ensure to create a realm that is fulfilling for not only our clients but their users as well. Highly determined to navigate towards the epitome of creativity, we at Devhence Solution ensure that our clients attain their expected business success.
-        </p>
+      <ForDev
+        devbanner="/images/aboutbanner.png"
+        devtitle="About Devhence Solution"
+        devstrong=""
+        devpara1="Devhence Solutions is a trusted mobile app development company based in Vadodara, dedicated to turning your ideas into powerful digital solutions. With a team of highly skilled professionals, we guide your vision through a structured development process  delivering innovation, performance, and value at every step."
+        devpara2="We work closely with our clients to ensure each project exceeds expectations and creates a meaningful impact for users. Our streamlined workflows and advanced functionality are all aligned with one mission: driving the growth of your business.
+From UI/UX design to development and quality assurance, our team is committed to building world-class mobile applications that combine strategic thinking with creative execution."
+      />
+      <div className="aibanner">
+        <div className="aidata">
+          <h2>A Team of Experts Building Scalable Apps for the Future</h2>
+          <p>
+            As a leading app development company in Vadodara, Devhence Solutions
+            empowers startups, growing businesses, and enterprises with
+            innovative digital solutions that drive unstoppable growth. Our
+            mission goes beyond delivering apps we create experiences that bring
+            value to both our clients and their users. Fueled by creativity and
+            commitment, our team is dedicated to turning bold ideas into
+            impactful, user-focused applications that help businesses achieve
+            measurable success.
+          </p>
+        </div>
       </div>
-    </div>
-    <Offer/>
-    <Process/>
-    <Industries />
-    <TabSection/>
-    <Footer/>
+      <Offer />
+      <Process />
+      <Industries />
+      <TabSection />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default About
+export default About;

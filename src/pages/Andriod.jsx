@@ -1,37 +1,74 @@
-import React from 'react'
-import ServHero from '../components/ServHero'
-import Header from '../components/Header'
-import ServOur from '../components/ServOur'
-import Industries from '../components/Industries'
-import AndroidServ from '../components/AndroidServ'
-import ForDev from '../components/ForDev'
-import TabSection from '../components/Tabs'
-import Process from '../components/Process'
-import Footer from '../components/Footer'
+import React from "react";
+import ServHero from "../components/ServHero";
+import Header from "../components/Header";
+import ServOur from "../components/ServOur";
+import Industries from "../components/Industries";
+import AndroidServ from "../components/AndroidServ";
+import ForDev from "../components/ForDev";
+import TabSection from "../components/Tabs";
+import Process from "../components/Process";
+import Footer from "../components/Footer";
 
 function Andriod() {
   return (
     <>
-    <Header/>
-    <ServHero title="Hire Tech-Driven Android app development services." subtitle="Contact Us To Embark On A Dynamic Development Journey." para="Do you wish to create an Android app development company in Dubai Android app with the best ? Your destination is Devhence Solution. We offer android app development services for startups as well as established enterprises. Our customized and cutting-edge android app services help numerous clients worldwide." bgurl="/images/servbg.png" />
+      <Header />
+      <ServHero
+        title="Hire Expert-Driven Android App Development Services."
+        subtitle="Let’s Build Your Vision Start Your Digital Journey with Us."
+        para="Looking to develop a high-performing Android app in India? Devhence Solutions is your ideal partner. We specialize in delivering cutting-edge Android app development services tailored for startups and established enterprises alike.
+
+Our team builds scalable, user-centric apps that drive growth and innovation. With a global client base, we’re proud to help businesses transform their ideas into successful mobile solutions."
+        bgurl="/images/servbg.png"
+      />
       <div className="servour">
         <div className="container">
-          <ServOur leftTitle="Our Android App Development Services" rightpara="We not only develop apps, but we also craft your success roadmap. Android App Development is a vast paradigm of possibilities that can employ various services on the way to success. Being the tech pioneers we find it obligatory to offer your business new-age android app development services" />
-            <div className="serv-bottom">
-                <AndroidServ icon="/images/offer1.png" title="Custom Android App Development" para="Devhence Solution offers custom android app development services in Saudi Arabia so you may voice your brand in just the way you want. Our team of experts promises to deliver android apps that are high-performing and scalable."/>
-                <AndroidServ icon="/images/design.png" title="Android UI/UX Design" para="The world is running its fingers all over Android. At a time where Android devices have made a home in every house, it is vital to expand your business on android’s digital spectrum. Our development team is highly skilled in fashioning user-friendly yet high geared android apps."/>
-                <AndroidServ icon="/images/Web.png" title="Android Web-Based Apps" para="Your business deserves to be seen everywhere. Our highly competent app developers have unmatchable skills in developing custom Android web-based app development. These solutions will help you in making your app more accessible to your users."/>
-                <AndroidServ icon="/images/multi.png" title="Multi-Platform Deployment" para="Carrying the beam of a top android app development company we specialize in deploying apps with seamless integration. Your needs to establish your reign over any platform will be taken care of by our expert android app development team. Get ahead of every competition while partnering with us."/>
-            </div>
+          <ServOur
+            leftTitle="Our Android App Development Services"
+            rightpara="At Devhence Solutions, we don’t just build apps we craft your digital success story. Android app development is a dynamic landscape full of possibilities, and we’re here to help you navigate it with confidence.
+As technology pioneers, we deliver next-gen Android solutions that are tailored to your business goals. From concept to deployment, our services are designed to empower your brand and unlock long-term growth in today’s competitive mobile market."
+          />
+          <div className="serv-bottom">
+            <AndroidServ
+              icon="/images/offer1.png"
+              title="Custom Android App Development"
+              para="Devhence Solutions provides tailored Android app development services in Vadodara, helping you bring your brand to life exactly how you envision it. Our expert team is committed to delivering high-performance, scalable Android applications designed to meet your unique business needs and exceed user expectations."
+            />
+            <AndroidServ
+              icon="/images/design.png"
+              title="Android UI/UX Design"
+              para="With Android devices in every hand and home, expanding your business on this digital platform is essential. At Devhence Solutions, our team specializes in designing intuitive, user-friendly interfaces that blend functionality with visual appeal. We craft engaging Android experiences that not only look great but perform seamlessly across all devices."
+            />
+            <AndroidServ
+              icon="/images/Web.png"
+              title="Android Web-Based Apps"
+              para="Your business deserves maximum visibility everywhere, on every device. At Devhence Solutions, our skilled developers specialize in creating custom Android web-based applications that are fast, responsive, and accessible. These solutions enhance user reach, improve engagement, and ensure your app is always just a tap away."
+            />
+            <AndroidServ
+              icon="/images/multi.png"
+              title="Multi-Platform Deployment"
+              para="As a leading Android app development company, Devhence Solutions excels in deploying applications with seamless integration across multiple platforms and devices. Whether you're targeting smartphones, tablets, or wearables our expert team ensures your app delivers a consistent, high-performance experience everywhere."
+            />
+          </div>
         </div>
-    </div>
-    <ForDev devbanner="/images/devbanner1.png" devtitle="Devhence Solution, the tech store for android app development" devstrong="Lists Amongst Leading Android App Development Solutions" devpara1="Devhence Solution provides everything you need to ideate, develop and launch a robust android app. Ever since our inception, our sole motive has been to offer the world a highly competent and skilled team of android app developers that can keep up with the latest updates and versions of today’s revolutionalizing technology." devpara2="Have an Android App Idea? Develop your Android app from just an idea to a revenue-generating reality. Devhence Solution is a Trusted Mobile App Development Company with a global presence with offices in India, UAE, Africa and the USA locations including Dubai, Saudi Arabia, Kuwait, Bahrain, Chicago, New York, San Francisco, Los Angeles, Dallas Houston, and Atlanta. Our 100+ experienced android app developers team operates as a single dynamic unit to develop high-end mobile apps with a futuristic vision and growth potential." />
-    <Process/>
-    <Industries />
-    <TabSection/>
-    <Footer/>
+      </div>
+      <ForDev
+        devbanner="/images/devbanner1.png"
+        devtitle="Devhence Solutions Your Trusted Partner for Android App Development"
+        devstrong="One of the Leading Android App Development Companies Worldwide"
+        devpara1="At Devhence Solutions, we provide everything you need to turn your Android app idea into a powerful, market-ready solution. From concept to launch, our expert team is dedicated to building innovative, high-performance apps that align with your business vision."
+        devpara2="Since our inception, our mission has been clear to deliver top-tier Android app development backed by a team of highly skilled professionals who stay ahead of emerging technologies, updates, and industry trends.
+
+Have an idea? Let’s turn it into a revenue-generating reality.
+
+With a India  our 100+ experienced developers collaborate as one seamless team to deliver future-ready Android apps built for scale and success."
+      />
+      <Process />
+      <Industries />
+      <TabSection />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default Andriod
+export default Andriod;

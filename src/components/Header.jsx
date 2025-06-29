@@ -1,6 +1,3 @@
-
-
-
 // import React, { useState } from 'react';
 // import Navbar from './Navbar';
 // import { Link } from 'react-router-dom';
@@ -34,7 +31,6 @@
 //         <MegaMenu/>
 //         </div>
 
-       
 //       </div>
 
 //       {/* Offcanvas Menu */}
@@ -53,10 +49,9 @@
 //           {/* <button>GET QUOTE</button> */}
 
 //         {/* <button class="Download-button">
-          
+
 //          <Link to="/get" style={{textDecoration:"none",color:'#fff'}} element={<Get/>}> <span>Get Quote</span> </Link>
 //         </button> */}
-
 
 //         </div>
 //       </div>
@@ -69,42 +64,40 @@
 
 // export default Header;
 
-
 // ------test-header-------------
 
-import React from 'react'
-import Navbar from './Navbar'
+import React from "react";
+import Navbar from "./Navbar";
 // import Logo from '../../public/Logo.png'
-import { Link } from 'react-router-dom'
-import MegaMenu from './Megamenu'
+import { Link } from "react-router-dom";
+import MegaMenu from "./Megamenu";
 function Header() {
   return (
     <>
       <div className="header">
         <div className="logo">
-        <Link to='/'>
-          <img src='/images/devlogo.jpeg' height={70}/>
-        </Link>
-        {/* <button className='course-btn'>
+          <Link to="/">
+            <img src="/images/devlogo.jpeg" height={70} />
+          </Link>
+          {/* <button className='course-btn'>
             Course <i class="fa-solid fa-bars" style={{marginLeft:'10px'}}></i>
         </button> */}
-        <MegaMenu/>
+          <MegaMenu />
         </div>
         {/* <a href="tel:+919998483743" className='header-call'>
       &#128222;  +91 99984 83743
         </a>   */}
         <nav>
-            {/* <a href="tel:+919998483743" className='header-call'>
+          {/* <a href="tel:+919998483743" className='header-call'>
       &#128222;  +91 99984 83743
         </a>   */}
-        
-            <Navbar/>
+
+          <Navbar />
         </nav>
-            {/* <i class="fa-solid fa-bars" id='bar'></i>   */}
+        {/* <i class="fa-solid fa-bars" id='bar'></i>   */}
       </div>
     </>
-  )
+  );
 }
 
-export default Header
-
+export default Header;

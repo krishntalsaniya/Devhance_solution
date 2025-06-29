@@ -1,81 +1,81 @@
-import React from 'react'
-import OrbitAnimation from './OrbitAnimation'
-import Button from './Button'
+import React from "react";
+import OrbitAnimation from "./OrbitAnimation";
+import Button from "./Button";
 
 const waydata = [
-    {
-        id:1,
-        photo:`/images/excellence.png`,
-        para:`10+ Years of`,
-        name:`Excellence`
-    },
-    {
-        id:2,
-        photo:`/images/product.png`,
-        para:`1000+ Projects`,
-        name:`Delivered`
-    },
-    {
-        id:3,
-        photo:`/images/tech.png`,
-        para:`200+ Technology`,
-        name:`Expert`
-    },
-]
+  {
+    id: 1,
+    photo: `/images/excellence.png`,
+    para: `2+ Years of`,
+    name: `Excellence`,
+  },
+  {
+    id: 2,
+    photo: `/images/product.png`,
+    para: `10+ Projects`,
+    name: `Delivered`,
+  },
+  {
+    id: 3,
+    photo: `/images/tech.png`,
+    para: `100+ Technology`,
+    name: `Expert`,
+  },
+];
 
 function Way() {
   return (
     <>
-    <div className="container">
-
-      <div className="way">
-        <div className="w-left">
-            <h2>Devhence Solution - Your Way to Tech Success</h2>
+      <div className="container">
+        <div className="way">
+          <div className="w-left">
+            <h2> Devhence Solutions Empowering Your Digital Journey</h2>
 
             <p>
-                The Best App Development Company, Which is All About Your Needs
+              The Best App Development Company, Which is All About Your Needs
             </p>
 
             <p>
-                Devhence Solution is a global web & <strong> mobile app development company </strong> located in India,  <strong> Dubai, Saudi Arabia, Kuwait, Bahrain </strong>, USA, and Singapore. We are one of the world's leading mobility firms, where innovative thinking, a bunch of inspiring minds, and a passion blends to forge an extraordinary impact.
+              Devhence Solutions is a leading web and mobile app development
+              company based in India, delivering tailored digital solutions that
+              align perfectly with your business goals.
             </p>
 
             <p>
-                We have a team of dynamic young and enthusiastic professionals who are sincerely dedicated to delivering dreams into exhilarating reality, with specializations in multiple domains, we propel our clients to reach the epitome of optimization. We stand tall not only for infusing profits for our customers in marketing but also draws their trust through our utmost ingenuousness and cordiality
+              With a team of passionate, innovative, and skilled professionals,
+              we turn ideas into powerful digital experiences. Our expertise
+              spans across various domains, helping businesses optimize
+              performance, enhance customer engagement, and drive growth.
             </p>
 
             <p>
-                We affirm to deliver phenomenal customer experiences and deliver them at a radically lower cost.
+              We believe in building long-term partnerships through trust,
+              transparency, and a deep commitment to excellence. Our mission is
+              to deliver exceptional value and memorable customer experiences —
+              all at highly competitive costs.
             </p>
 
             <div className="way-data">
-                {
-                    waydata.map((item)=>
-
-                        <div className="waybx">
-                            <img src={item.photo} alt="item-image" />    
-                            <p>{item.para}</p>
-                            <p>{item.name}</p>
-                        </div>    
-
-                    )
-                }
+              {waydata.map((item) => (
+                <div className="waybx">
+                  <img src={item.photo} alt="item-image" />
+                  <p>{item.para}</p>
+                  <p>{item.name}</p>
+                </div>
+              ))}
             </div>
 
             <div className="btn">
-            <Button title="Know More"/>
+              <Button title="Know More" />
             </div>
-
-        </div>
-        <div className="w-right">
-            <OrbitAnimation/>
+          </div>
+          <div className="w-right">
+            <OrbitAnimation />
+          </div>
         </div>
       </div>
-
-    </div>
-
     </>
-  )
+  );
 }
 
-export default Way
+export default Way;

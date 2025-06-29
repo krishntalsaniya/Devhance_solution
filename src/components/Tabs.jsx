@@ -15,7 +15,7 @@ const tabs = [
   {
     name: "Programming",
     icons: [
-      { name: "Objective-C", img: "/images/ObjectiveClogo.webp" } ,
+      { name: "Objective-C", img: "/images/ObjectiveClogo.webp" },
       { name: "Swift", img: "/images/Swiftlogo.webp" },
       { name: "Flutter", img: "/images/Flutterlogo.webp" },
       { name: "React", img: "/images/Reactlogo.webp" },
@@ -54,7 +54,6 @@ const tabs = [
       { name: "Kotlin", img: "/images/Kotlinlogo.webp" },
       { name: "Flutter", img: "/images/Flutterlogo.webp" },
       { name: "Java", img: "/images/Javalogo.webp" },
-
     ],
   },
   {
@@ -86,49 +85,49 @@ const tabs = [
   },
 ];
 
-
 const TabSection = () => {
   const [activeTab, setActiveTab] = useState("Programming");
 
   return (
-
     <>
-
-    <div className="tab-container">
-     <div className="top-notch">
-          <h2>Our Top-Notch Tech Stack</h2>
+      <div className="tab-container">
+        <div className="top-notch">
+          <h2>Technologies That Power Our Solutions</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae nostrum delectus qui. Ab ea impedit natus, architecto adipisci non numquam fuga molestias fugit distinctio explicabo magnam inventore delectus quia quam.
+            We specialize in a wide range of cutting-edge technologies to bring
+            your ideas to life with efficiency, performance, and scalability.
+            From native languages like Objective-C and Swift to modern tools
+            like Flutter, React, and Kotlin, our team is equipped to build
+            seamless cross-platform and high-performance applications tailored
+            to your needs.
           </p>
-      </div>
-      <div className="tab-header">
-        {tabs.map((tab) => (
-          <div
-            key={tab.name}
-            className={`tab-title ${activeTab === tab.name ? "active" : ""}`}
-            onClick={() => setActiveTab(tab.name)}
-          >
-            {tab.name}
-          </div>
-        ))}
-      </div>
-
-      <div className="tab-content">
-        {tabs
-          .find((tab) => tab.name === activeTab)
-          .icons.map((icon, idx) => (
-            <div className="icon-box" key={idx}>
-              {/* <div className="icon-img">🔧</div> 
-              <p>{icon}</p> */}
-              <img className="icon-img" src={icon.img} alt={icon.name} />
-              <p>{icon.name}</p>
+        </div>
+        <div className="tab-header">
+          {tabs.map((tab) => (
+            <div
+              key={tab.name}
+              className={`tab-title ${activeTab === tab.name ? "active" : ""}`}
+              onClick={() => setActiveTab(tab.name)}
+            >
+              {tab.name}
             </div>
           ))}
+        </div>
+
+        <div className="tab-content">
+          {tabs
+            .find((tab) => tab.name === activeTab)
+            .icons.map((icon, idx) => (
+              <div className="icon-box" key={idx}>
+                {/* <div className="icon-img">🔧</div> 
+              <p>{icon}</p> */}
+                <img className="icon-img" src={icon.img} alt={icon.name} />
+                <p>{icon.name}</p>
+              </div>
+            ))}
+        </div>
       </div>
-    </div>
-
     </>
-
   );
 };
 
